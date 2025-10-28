@@ -7,7 +7,7 @@ public class homework3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);  
         
-        System.out.println("輸入三個數字：");
+        System.out.println("輸入三個數字： ");
 
         int a = sc.nextInt();  
         int b = sc.nextInt();  
