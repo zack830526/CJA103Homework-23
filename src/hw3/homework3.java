@@ -29,6 +29,39 @@ public class homework3 {
         }
         else
         	System.out.println("不是三角形 ");
-    
+//    ****************************************************
+        
+        System.out.println("開始猜數字吧");
+        int x = sc.nextInt();
+        int y =(int) (Math.random()*10);
+        while(x != y)
+        {
+        	System.out.println("猜錯了");
+        	int z = sc.nextInt();
+        	x=z;
+        }
+        System.out.printf("答對了 答案就是"+y);
+//      ****************************************************
+        int i=0;
+        System.out.print("");
+        System.out.print("請輸入討厭的數字");
+        int j = sc.nextInt();
+        x= j%10;
+		System.out.println("");
+		System.out.print("可以選擇的數字有");
+		for(int k=1;k<=49;k++)
+		{
+			if(k % 10 != x && k / 10 != x)
+			{
+				System.out.print(" "+ k);
+				i++;				
+			}	
+			
+		}
+		System.out.println("");
+		System.out.println("總共有"+i+"個");
+//      ****************************************************
+		 		
+        
     }
 }
